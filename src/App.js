@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Ball from "./Component/Ball";
 
 function App() {
+  var Detail = [{ Tittle: "Shubham Pandey", Age: 24 }];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>This is (aap.js)</p>
+      <Ball Tittle={Detail[0].Tittle} Age={Detail[0].Age}></Ball>
+    
     </div>
   );
 }
